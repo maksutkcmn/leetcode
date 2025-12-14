@@ -6,7 +6,7 @@ public class Solution {
     public bool Helper(string s, string p, int sIndex, int pIndex)
     {
         if (memoization.ContainsKey((sIndex, pIndex)))
-            return memoization[sIndex, pIndex];
+            return memoization[(sIndex, pIndex)];
 
         if (pIndex == p.Length)
         {
